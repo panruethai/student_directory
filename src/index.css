@@ -1,0 +1,55 @@
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  padding-bottom: 40px;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-form input,
+.student-form button,
+.filter-button,
+.delete-button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.student-form button,
+.filter-button,
+.delete-button {
+  cursor: pointer;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.delete-button {
+  margin-top: 8px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 700px) {
+  .student-form {
+    grid-template-columns: 1fr;
+  }
+  .summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
